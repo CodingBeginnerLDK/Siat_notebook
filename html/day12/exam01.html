@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    문자열 테스트
+    <script>
+        let testText = "abcdefghijklmnopqrstuvwxyz";
+        console.log(testText.length);
+        //문자열에 관련된 메소드는 원본 문자열을 반환시키지 않는다.
+        console.log(testText.slice(0,3));
+        console.log(testText.substr(0,5));
+        let examText = "love aaa Love  bbbb love";
+        console.log(examText.replace(/love/gi, '사랑'));
+        console.log(examText);
+        console.log(examText.charAt(0), examText[0]);
+        examText[0] = 'L';
+        console.log(examText);
+        console.log('examText에 저장된 단어의 개수 : ', examText.split(/\s+/).length);
+    </script>
+</body>
+</html>

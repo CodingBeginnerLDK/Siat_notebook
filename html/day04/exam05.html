@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 만들기</title>
+    <style>
+        table{
+            border : 2px solid black;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        th,td{
+            border : 1px solid black;
+            padding: 3px 10px;
+            text-align : center;
+        }
+        table>tbody>tr{
+            background-color: tomato;
+        }
+        tbody>tr:nth-child(even){
+            background-color: #bbb;
+        }
+        tbody>tr:hover{
+            background-color: greenyellow;
+            color : blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>성적표</caption>
+        <thead>
+            <tr>
+                <th>학번</th>
+                <th>이름</th>
+                <th>국어</th>
+                <th>영어</th>
+                <th>수학</th>
+                <th>총점</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>학번1</td>
+                <td>이름1</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>학번2</td>
+                <td>이름2</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>학번3</td>
+                <td>이름3</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>300</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <td>테이블내용1</td>
+            <td>테이블내용2</td>
+            <td>테이블내용3</td>
+        </tr>
+        <tr>
+            <td>테이블내용1</td>
+            <td>테이블내용2</td>
+            <td>테이블내용3</td>
+        </tr>
+        <tr>
+            <td>테이블내용1</td>
+            <td>테이블내용2</td>
+            <td>테이블내용3</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam04</title>
+    <style>
+        div{
+            height: 100px;
+            border: 1px solid blue;
+        }
+        [data-test]{
+            background-color: yellow;
+            margin: 15px;
+        }
+        [ldk]{
+            width: 300px;
+            height: 150px;
+            background-color: peachpuff;
+        }
+        aaa{
+            font-size:30px;
+        }
+        [data-test=sample02]{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div data-test="sample01">1</div>
+    <div data-test="sample02">2</div>
+    <div data-test="sample03">3</div>
+    <hr>
+    <aaa>
+        <div ldk="test">01가</div>
+    </aaa>
+    <hr>
+    <div ldk="test">02가</div>
+    <hr>
+    <aaa>
+        <div ldk="test">03가</div>
+    </aaa>
+    <hr>
+</body>
+</html>

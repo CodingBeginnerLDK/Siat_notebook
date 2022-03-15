@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border : 1px solid border;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <table>
+            <caption><h1>회원가입</h1></caption>
+            <tr>
+                <td>아이디</td><td><input type="text" name="Id"></td>
+            </tr>
+            <tr>
+                <td>이름</td><td><input type="text" name="Name"></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td><td><input type="password" name="Password"></td>
+            </tr>
+            <tr>
+                <td>비밀번호 확인</td><td><input type="password" name="PasswordCheck"></td>
+            </tr>
+            <tr>
+                <td>전화번호</td><td><input type="tel" name="Tel" placeholder="010-123-4567"></td>
+            </tr>
+            <tr>
+            <td>이메일</td><td><input type="text" name="EmailId">@
+                <select name="Emaildomain">
+                    <option value="Email1">naver.com</option>
+                    <option value="Email2">daum.net</option>
+                    <option value="Email3">직접 입력</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>문자수신 여부</td><td><input type="radio">예 <input type="radio"> 아니오 </td>
+            </tr>
+            <tr>
+                <td>가입 경로</td><td><input type="checkbox"> 친구 소개 <input type="checkbox"> 인터넷 검색</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h1>답변 글쓰기</h1>
+        <table>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="name" placeholder="홍길동"></td>
+            </tr>
+            <tr>
+                <td>제목</td>
+                <td><input type="text" name="title" value="RE:"></td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td><textarea name="content" cols="150" rows="10"></textarea></td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>

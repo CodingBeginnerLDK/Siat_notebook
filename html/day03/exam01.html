@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 정보 관련 태그</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <figure>
+        <figcaption>이 이미지는 샘플용 이미지 입니다.</figcaption>
+        <img src="http://place-hold.it/150x80" alt="Remote Sample Image" title="hi">                
+    </figure>
+
+    <div id="imgcontainer">
+        <img src="http://place-hold.it/150x80" alt="">
+        <img src="http://place-hold.it/150x80" alt="">
+        <img src="http://place-hold.it/150x80" alt="">
+        <img src="http://place-hold.it/150x80" alt="">
+        <img src="http://place-hold.it/150x80" alt="">
+    </div>
+
+    <div id="subimgcontain"></div>
+    <script>
+        let imgNames = ['150x80', '장미 이미지','200x100','백합 이미지','150x80', '라벤더 이미지'];
+        //let imgDesc = ['장미 이미지','백합 이미지','라벤더 이미지'];
+
+        let imgHTML = '';
+        for(let i = 0; i < imgNames.length; i+=2){
+            imgHTML = imgHTML + '<img src="http://place-hold.it/' + imgNames[i] + '" alt="' + imgNames[i+1] + '" />';
+        }
+
+        $('#subimgcontain').html(imgHTML);
+        console.log(imgHTML);
+    </script>
+</body>
+</html>

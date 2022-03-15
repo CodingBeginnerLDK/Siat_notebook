@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력폼 선택자 학습</title>
+    <style>
+        div{
+            border:2px solid blue;
+            width:80%;
+            margin: 0 auto;
+        }
+        [class]{
+            width: 60%;
+            height:250px;
+            border:2px solid red;
+            margin:10px;
+        }
+        .box1:hover{
+            background-color:yellow;
+        }
+        :required:focus{
+            background-color: aqua;
+        }
+        :checked{
+            display: inline-block;
+            width:30px;
+            height:30px;;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <container>
+            <div class="box1"></div>
+            <div class="box2">
+                <form action="">
+                    <input type="text" name="" id="" required="required"><br>
+                    <input type="text" name="" id="" required="required"><br>
+                    <input type="text" name="" id="" ><br>
+                    <hr>
+                    <legend><label for="">특기1</label><input type="radio" name="1" id="" value="특기01"></legend>
+                    <legend><label for="">특기2</label><input type="radio" name="1" id="" value="특기02"></legend>
+                    <legend><label for="">특기3</label><input type="radio" name="1" id="" value="특기03"></legend>
+                </form>
+            </div>
+        </container>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam06</title>
+    <style>
+        p{
+            border: 2px solid black;
+            margin: 15px 0px;
+        }
+        div>p:nth-of-type(odd){
+            background-color: yellowgreen;
+        }
+        p.selCls:nth-of-type(2n+1){
+            background-color: yellow;
+        }
+        section>p:nth-child(n+1):nth-child(-n+4){
+            background-color: blue;
+            display: inline-block;
+        }
+        section>p:nth-child(n+5):nth-child(-n+8){
+            background-color: yellow;
+            
+        }
+        section>p:nth-child(n+9):nth-child(-n+12){
+            background-color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <p class="selCls">가나다라01</p>
+    <span>ㅎㅇㅎㅇ</span>
+    <p class="selCls">가나다라02</p>
+    <p class="selCls">가나다라03</p>
+    <p class="selCls">가나다라04</p>
+    <p class="selCls">가나다라05</p>
+    <div>
+        <p>abcd01</p>
+        <p>abcd02</p>
+        <p>abcd03</p>
+        <p>abcd04</p>
+        <p>abcd05</p>
+
+        <section>
+            <p>섹션 안쪽 문단001</p>
+            <p>섹션 안쪽 문단002</p>
+            <p>섹션 안쪽 문단003</p>
+            <p>섹션 안쪽 문단004</p>
+            <p>섹션 안쪽 문단005</p>
+            <p>섹션 안쪽 문단006</p>
+            <p>섹션 안쪽 문단007</p>
+            <p>섹션 안쪽 문단008</p>
+            <p>섹션 안쪽 문단009</p>
+            <p>섹션 안쪽 문단010</p>
+            <p>섹션 안쪽 문단011</p>
+            <p>섹션 안쪽 문단012</p>
+        </section>
+    </div>
+</body>
+</html>

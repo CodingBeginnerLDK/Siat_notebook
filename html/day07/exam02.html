@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        ul{
+            width: 80%;
+            height: 30px;
+            padding: 5px;
+            margin: 0 auto;
+            background-color: yellowgreen;            
+        }
+        li{
+            float: left;
+            box-sizing: border-box;            
+            width: 20%;
+            border-left: 2px solid white;
+        }
+        nav>ul>li:last-child{
+            border-right: 2px solid white;
+        }
+        li a{
+            display: block;
+            text-align: center;
+            width: 110px;
+            color: black;
+        }
+        li a:hover{
+            color: blueviolet;
+            border-bottom: 2px solid blueviolet;
+        }
+        div{
+            width: 80%;
+            height: 500px;
+            margin: 80px;
+            border: 5px solid black;
+        }
+        div:nth-child(odd){
+            background-color: rgba(55,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#info01">첫번째 항목</a></li>
+            <li><a href="#info02">두번째 항목</a></li>
+            <li><a href="#info03">세번째 항목</a></li>
+            <li><a href="#info04">네번째 항목</a></li>
+            <li><a href="#info05">다섯번째항목</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <div id="info01">
+        <p>1번째 박스의 01번째 문단입니다</p>
+        <p>2번째 박스의 02번째 문단입니다</p>
+        <p>3번째 박스의 03번째 문단입니다</p>
+    </div>
+    <div id="info02">
+        <p>1번째 박스의 01번째 문단입니다</p>
+        <p>2번째 박스의 02번째 문단입니다</p>
+        <p>3번째 박스의 03번째 문단입니다</p>
+    </div>
+    <div id="info03">
+        <p>1번째 박스의 01번째 문단입니다</p>
+        <p>2번째 박스의 02번째 문단입니다</p>
+        <p>3번째 박스의 03번째 문단입니다</p>
+    </div>
+    <div id="info04">
+        <p>1번째 박스의 01번째 문단입니다</p>
+        <p>2번째 박스의 02번째 문단입니다</p>
+        <p>3번째 박스의 03번째 문단입니다</p>
+    </div>
+    <div id="info05">
+        <p>1번째 박스의 01번째 문단입니다</p>
+        <p>2번째 박스의 02번째 문단입니다</p>
+        <p>3번째 박스의 03번째 문단입니다</p>
+    </div>
+</body>
+</html>

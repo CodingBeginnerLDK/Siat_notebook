@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam01</title>
+    <style>
+        #container{
+            border:2px solid blue;
+        }
+        #container>*{
+            width:200px;
+            height:200px;
+            background-color:yellow;
+            border:1px solid red;
+            margin:3px;
+            float:right; /* 남아있는 공간을 양보, 떠다니다 */
+        }
+        #container:before, #container:after{
+            /* Clear Fix : float 속성을 이용해서 레이아웃이 변경되었을 때 빈 요소의 블럭을 추가해서 바로 잡는다*/
+            content : '';
+            display : block;
+            clear : both;            
+        }
+        p:empty{
+            border: 2px solid green;
+            height: 15px;            
+        }
+        #threeContainer>p:last-child:first-line{
+            color:red;
+            font-size:1.3em;
+        }
+        #fourContainer{
+            border:2px red solid;
+        }
+        #fourContainer>p{
+            background-color: aqua;
+            width:130px;
+            display:inline-block;
+            /* float:left; */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="first">One</div>
+        <div class="second">Two</div>
+        <div class="third">Three</div>
+        <p>Context.</p>
+    </div>
+    <div id="subcontainer">
+        <img src="http://place-hold.it/680x80" alt="Substitute Img">
+    </div>
+    <div id="threeContainer">
+        <p>문단내용001</p>
+        <p></p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur nobis vel officia facilis voluptates modi in necessitatibus impedit explicabo consequatur inventore velit consectetur quaerat eligendi assumenda nostrum, molestias, dolorum illum?</p>
+    </div>
+    <div id="fourContainer">
+        <p>목록 예시01</p><p>목록 예시02</p><p>목록 예시03</p><p>목록 예시04</p><p>목록 예시05</p>
+    </div>
+</body>
+</html>

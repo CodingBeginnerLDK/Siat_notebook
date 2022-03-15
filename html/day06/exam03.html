@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam03</title>
+    <link rel="stylesheet" href="../Style/reset.css">
+    <style>
+        div{
+            color:rgb(255,0,0);
+            width: 500px;
+            height: 500px;
+            margin: 30px;
+        }
+        /* p{
+            border: 2px solid #ff0000;
+        } */
+        section{
+            background-color: red;
+        }
+        #backgroundbox{
+            background: green;
+            opacity: 0.5;
+        }
+        #backImg{
+            background: no-repeat right top;
+            background-image: url("http://place-hold.it/80x80"), url("http://place-hold.it/150x150");
+        }
+        p.line{
+            height: 3px;
+            border-bottom: 1px solid gray;
+        }
+        hr{
+            border: none;
+        }
+        div.boxmodel{
+            width: 200px;
+            height: 200px;
+            background-color: burlywood;
+            border: none;
+            margin: 10px;
+            display: inline-block;
+        }
+        div.boxmodel:nth-child(1){
+            border-radius: 0 100%;
+        }
+        div.boxmodel:nth-child(2){
+            border-radius: 100% 0;
+        }
+        div.boxmodel:nth-child(3){
+            border-radius: 50%;
+        }
+        div.boxmodel:nth-child(4){
+            border-radius: 100px;
+        }
+        div.boxmodel:nth-child(5){
+            border-radius: 30px 30px 30px 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>가나다라</div>
+    <p>별을 헤는 밤</p>
+    <section>영역</section>
+    <div id="backgroundbox"></div>
+    <div id="backImg">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae iusto esse deleniti veniam! Soluta reiciendis dolor nemo, exercitationem quis fugiat ratione recusandae! Debitis exercitationem fuga ducimus voluptatibus ipsam et voluptate?
+        Iste, amet! Molestias voluptate nobis placeat, modi id illum cupiditate culpa cum error molestiae, distinctio ad magnam quo corrupti iure! Enim aspernatur iste quos earum quia quod praesentium facilis reiciendis!
+    </div>
+    <hr>
+    <p>내용</p>
+    <p class="line"></p>
+    <p>내용</p>
+    <hr>
+    <div class="boxpre">
+        <div class="boxmodel">가</div>
+        <div class="boxmodel">나</div>
+        <div class="boxmodel">다</div>
+        <div class="boxmodel">라</div>
+        <div class="boxmodel">마</div>
+    </div>
+</body>
+</html>

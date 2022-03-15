@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 폼 만들기</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>필수입력</legend>
+            <label for="memid">ID</label><input type="text" name="memid" id="memid"><br>
+            <label for="mempw">Password</label><input type="password" name="mempw" id="mempw"><br>
+            <label for="memName">Name</label><input type="text" name="memName" id="memName"><br>
+        </fieldset>
+        <fieldset>
+            <legend>선택사항</legend>
+            <label for="mememail">EmailAddress</label><input type="email" name="mememail" id="mememail"><br>
+
+            <fieldset>
+                <legend>취미</legend>                
+                <label for="exercise">운동</label><input type="checkbox" name="memhobby" id="exercise"><br>
+                <label for="music">음악감상</label><input type="checkbox" name="memhobby" id="music"><br>
+                <label for="drawing">그림그리기</label><input type="checkbox" name="memhobby" id="drawing"><br>
+            </fieldset>
+            <fieldset>
+                <legend>성별</legend>
+                <label for="man">남자</label><input type="radio" name="memgender" id="man" value="남">
+                <label for="woman">여자</label><input type="radio" name="memgender" id="woman" value="여">
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>
