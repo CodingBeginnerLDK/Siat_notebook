@@ -13,3 +13,12 @@ const resultValue2 = arrData.reduce(
     }, []
 );
 console.log(resultValue2);
+
+const resultValue3 = arrData.reduce(
+    (... arguments) => {
+        console.log(arguments);
+        arguments[0].push(arguments[1]*2);
+        return arguments[0];
+    },[]
+);
+console.log(resultValue3);
