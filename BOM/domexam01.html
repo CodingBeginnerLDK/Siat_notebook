@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="appendText">문단001</p>
+    <p>문단002</p>
+    <p>추가내용</p>
+    <p class="appendText">문단003</p>
+    <script>
+        let selPtag = document.getElementsByClassName("appendText");
+        for(let i = 0; i<selPtag.length;i++){
+            selPtag[i].innerHTML += "Text";
+        }
+    </script>
+</body>
+</html>

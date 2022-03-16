@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>JavaScript HTML DOM</h2>
+    
+    <p id="intro">Finding HTML Elements by Id</p>
+    <p>This example demonstrates the <b>getElementsById</b> method.</p>
+    
+    <div id="demo">hello</div>
+    
+    <script>
+        const arrData = ['menu1','menu2','menu3', 'menu4']; //"메뉴1 메뉴2 메뉴3 메뉴4".spliet(/\s+/);
+        const element = document.getElementById("intro");
+        console.log(element);
+        let selData = document.getElementById("demo");
+        let innerHTMLText = "<ul>";
+            for(let i = 0; i < arrData.length; i++){
+                innerHTMLText += ("<li>" + arrData[i] + "</li>");
+            }
+            innerHTMLText + "</ul>";
+            selData.innerHTML = innerHTMLText;
+    </script>
+    </body>
+</html>

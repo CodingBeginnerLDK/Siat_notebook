@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainbox">
+        <p>문단001</p>
+        <p>문단002</p>
+        <p>문단003</p>
+        <p>문단004</p>
+        <p>문단005</p>
+    </div>
+    <div class="subBox">
+        <p>서브내용001</p>
+        <p>서브내용002</p>
+        <p>서브내용003</p>
+    </div>
+
+    <aside class="aaa">
+        <p>Hello World1</p>
+    </aside>
+    <aside class="aaa">
+        <p>Hello World2</p>
+    </aside>
+    <aside class="aaa">
+        <p>Hello World3</p>
+    </aside>
+
+    <script>
+        let selData1 = document.querySelector("#mainbox>p:nth-child(3)");
+        console.log(selData1);
+        let selData2 = document.getElementById("mainbox");
+        console.log(selData2);
+        let selData2p3 = selData2.getElementsByTagName('p')[2];
+        console.log(selData2p3);
+        let selData2One = document.getElementById("mainbox").getElementsByTagName("p")[2];
+        console.log(selData2One);
+        let clsData1 = document.querySelector('.aaa');
+        let clsData2 = document.querySelectorAll('.aaa');
+        console.log(clsData1);
+        console.log(clsData2);
+    </script>
+</body>
+</html>
