@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <ul id="myList">
+            <li>이름 : <input type="text"></li>
+            <li>나이 : <input type="text"></li>
+            <li>주소 : <input type="text"></li>
+        </ul>
+    </form>
+    <button id="btn1">Append list item</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let num = 0;
+        const infolist = ["주민번호","아이디","비밀번호"];
+        $("#btn1").click(function (){
+            $("#myList").append("<li>"+infolist[num]+": <input type='text'></input></li>");
+            num++;
+        })
+    </script>
+</body>
+</html>
