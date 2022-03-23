@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #table {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="ul"></ul>
+    <button onclick="add()">생성</button>
+  </body>
+  <script>
+    function add() {
+      let element = document.getElementById("ul"); // assuming ul exists
+      let fragment = document.createDocumentFragment();
+      let browsers = [
+        "Firefox",
+        "Chrome",
+        "Opera",
+        "Safari",
+        "Internet Explorer",
+      ];
+
+      browsers.forEach(function (browser) {
+        let li = document.createElement("li");
+        li.textContent = browser;
+        fragment.appendChild(li);
+      });
+
+      element.appendChild(fragment);
+    }
+  </script>
+</html>

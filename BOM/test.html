@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="mylist">
+      <li>a</li>
+      <li>b</li>
+      <li>c</li>
+    </ul>
+    <button onclick="appendList()">Append</button>
+    <script>
+      function appendList() {
+        const target = document.getElementById("mylist");
+        const li1 = document.createElement("li");
+        const li2 = document.createElement("li");
+        const text1 = document.createTextNode("Address");
+        const text2 = document.createTextNode("name");
+        // li1.appendChild(text1);
+        // li2.appendChild(text2);
+        // target.appendChild(li1);
+        // target.appendChild(li2);
+
+        for (let i = 0; i < 5; i++) {
+          target.appendChild("생성");
+        }
+      }
+    </script>
+  </body>
+</html>
